@@ -1,0 +1,15 @@
+--14dae94734bbf91f96050d83567b
+Content-Type: text/plain; charset=UTF-8
+
+Test email body. This is the body of a very interesting email message sent
+to me from a very interesting person asking me to do some very interesting stuff.
+
+--14dae94734bbf91f96050d83567b
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Test email body. This is the body of a very interesting em=
+ail message sent to me from a very interesting person asking me to do some =
+very interesting stuff.=C2=A0</div>
+
+--14dae94734bbf91f96050d83567b--
