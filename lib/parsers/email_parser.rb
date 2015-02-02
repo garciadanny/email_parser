@@ -10,6 +10,10 @@ class EmailParser
     @header ||= scanner.pre_match
   end
 
+  def body
+    @body ||= scanner.post_match
+  end
+
   private
 
   def scanner
