@@ -32,4 +32,13 @@ describe Email do
       end
     end
   end
+
+  describe '#body' do
+
+    context 'given a raw email string' do
+      it 'provides an interface to access the message body' do
+        expect(email.body).to respond_to :text_plain, :text_html
+      end
+    end
+  end
 end

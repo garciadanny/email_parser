@@ -10,6 +10,10 @@ class Email
     @header ||= header_parser.header
   end
 
+  def body
+    @body ||= body_parser.body
+  end
+
   private
 
   def email_parser
@@ -18,6 +22,10 @@ class Email
 
   def header_parser
     HeaderParser.new( email_parser.header )
+  end
+
+  def body_parser
+    BodyParser.new( header.content_type, email_parser.body )
   end
 
 end
