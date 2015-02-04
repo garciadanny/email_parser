@@ -25,7 +25,7 @@ class HeaderParser
   end
 
   def header_field string
-    name, body = string.split(':')
+    name, body = string.split(':', 2)
     { name: field_name(name), body: field_body(body) }
   end
 

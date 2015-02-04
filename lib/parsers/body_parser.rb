@@ -44,7 +44,7 @@ class BodyParser
 
   def subtype header_string
     content_type = header_string.scan(content_type_matcher).join
-    subtype = content_type.split(':').last
+    subtype = content_type.split(':', 2).last
     subtype.strip.gsub('/', '_')
   end
 
