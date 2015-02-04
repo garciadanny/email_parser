@@ -1,3 +1,22 @@
+# RFC 1341
+# 7.2 and 7.2.1
+# Multiple part messages must contain a "multipart" Content-Type header field
+# and a *required* boundary parameter which is used to define the encapsulation
+# boundary. The body must contain one or more 'body parts' each preceded by
+# an encapsulation boundary, and the last one followed by a closing boundary.
+#
+# Each part starts with:
+# 1. an encapsulation boundary,
+# 2. and then contains a body part consisting of header area
+# 3. a blank line
+# 4. and a body area.
+#
+# A boundary beginning with "--" defines the beginning of a body part
+# A boundary beginning with "--" and ending with "--" defines the end of all the body parts.
+# 7.2.3
+# The "alternative" subtype means that each body part is an alternative version of the *same*
+# information. The last body part is usually the "best" type based on the user's environment.
+
 require_relative '../decorators/multipart_alternative_parser'
 require 'ostruct'
 

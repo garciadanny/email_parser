@@ -1,3 +1,15 @@
+# RFC 2822
+# 2.1
+# The body is a sequence of characters that follows the header and is separated
+# from the header section by an **empty line**. CRLF Ex:
+# 1. Header
+# 2. Empty line
+# 3. Body
+#
+# 2.2
+# Header fields begin with a field name followed by a ":" followed by a field body
+# and terminated with a CRLF (newline).
+
 require 'ostruct'
 
 class HeaderParser
