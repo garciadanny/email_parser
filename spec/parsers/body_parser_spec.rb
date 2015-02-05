@@ -7,9 +7,9 @@ describe BodyParser do
 
   describe '#body' do
 
-    let(:body) { body_parser.body }
-
     context 'given a raw body string' do
+
+      let(:body) { body_parser.body }
 
       it 'parses the plain text version of the email body' do
         expect(body.text_plain).to eq 'This is the body of the test email.'
