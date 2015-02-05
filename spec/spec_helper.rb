@@ -4,7 +4,7 @@ end
 
 require 'rspec'
 require 'pry'
-require 'helpers/original_email_helper'
+require 'support/original_email_helper'
 
 RSpec.configure do |config|
   config.order = 'random'
