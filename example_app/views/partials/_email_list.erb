@@ -1,0 +1,19 @@
+<table>
+  <tbody>
+    <tr>
+      <th>Date</th>
+      <th>Subject</th>
+      <th>From</th>
+      <th>To</th>
+    </tr>
+    <% emails.each do |email| %>
+      <tr>
+        <td><%= abbreviated_date(email.header.date) %></td>
+        <td><%= email.header.subject %></td>
+        <td><%= email.header.from %></td>
+        <td><%= email.header.to %></td>
+        <td><a href="/emails/<%= email_id(email.header.content_type) %>">Open</a></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

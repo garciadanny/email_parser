@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/application.css">
+  </head>
+  <body>
+    <div id="mailbox" class="container">
+      <aside class="col-sm-2">
+        <h3>Mailbox</h3>
+        <div><a href="/">Inbox</a></div>
+      </aside>
+      <section class="col-sm-10">
+        <%= erb :'partials/_email_list', layout: false, locals: { emails: @emails } %>
+        <%= yield %>
+      </section>
+    </div>
+  </body>
+</html>
