@@ -21,11 +21,11 @@ require_relative '../decorators/multipart_alternative_parser'
 require 'ostruct'
 
 class BodyParser
-  attr_reader :content_type, :body_string
+  attr_reader :content_type, :original_body
 
-  def initialize content_type, body_string
+  def initialize content_type, original_body
     @content_type = content_type
-    @body_string = body_string
+    @original_body = original_body
     self.extend decorator
     parse_body
   end
@@ -37,7 +37,7 @@ class BodyParser
   private
 
   def scanner
-    @scanner ||= StringScanner.new( body_string )
+    @scanner ||= StringScanner.new( original_body )
   end
 
   def empty_line_matcher
@@ -46,6 +46,10 @@ class BodyParser
 
   def content_type_matcher
     /Content-Type:[^;]*/
+  end
+
+  def boundary_matcher
+    /--\w+/
   end
 
   def decorator
@@ -61,7 +65,7 @@ class BodyParser
     scanner.check_until( empty_line_matcher ).nil?
   end
 
-  def subtype header_string
+  def content_subtype header_string
     content_type = header_string.scan(content_type_matcher).join
     subtype = content_type.split(':', 2).last
     subtype.strip.gsub('/', '_')
@@ -69,5 +73,9 @@ class BodyParser
 
   def body_parts
     @parts ||= {}
+  end
+
+  def decode message
+    message.unpack('M').pop
   end
 end
