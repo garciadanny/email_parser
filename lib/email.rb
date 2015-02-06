@@ -1,3 +1,7 @@
+require_relative 'parsers/email_parser'
+require_relative 'parsers/header_parser'
+require_relative 'parsers/body_parser'
+
 class Email
 
   attr_reader :original_email
