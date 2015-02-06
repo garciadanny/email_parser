@@ -1,0 +1,41 @@
+body {
+    background: #faf4f1;
+}
+
+table {
+    width: 100%;
+    border-bottom: solid gray;
+}
+
+th, td {
+    text-align: center;
+}
+.container {
+    background: white;
+    margin: 5em auto;
+    min-height: 30em;
+}
+
+.content {
+    margin-top: 2em;
+}
+
+#subject {
+    margin: .5em 0;
+    color: orange;
+    font-size: 2em;
+}
+
+#message {
+    margin-bottom: .5em;
+    font-family: "Lucida Grande" , Helvetica, arial, Arial, sans-serif;
+}
+
+.email-info {
+    margin: 1em 0;
+}
+
+#index {
+    text-align: center;
+    margin-top: 5em;
+}
