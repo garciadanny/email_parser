@@ -1,0 +1,16 @@
+Test-Header: TestValue
+Date: Wed, 4 Feb 2015 14:50:42 -0700
+Content-Type: multipart/alternative; boundary=123
+
+--123
+Content-Type: text/plain; charset=UTF-8
+
+Test Email
+
+--123
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div>Test Email</div>
+
+--123--
