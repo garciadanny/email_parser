@@ -1,0 +1,21 @@
+<div class="content">
+
+  <div class="email-info">
+    <strong>From:</strong>
+    <div><%= @email.header.from %></div>
+  </div>
+  <div class="email-info">
+    <strong>To:</strong>
+    <div><%= @email.header.to %></div>
+  </div>
+  <div class="email-info">
+    <strong>Date:</strong>
+    <div><%= abbreviated_date(@email.header.date) %></div>
+  </div>
+  <div id="subject">
+    <%= @email.header.subject %>
+  </div>
+  <div id="message">
+    <%= @email.body.text_html %>
+  </div>
+</div>

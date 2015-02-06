@@ -14,4 +14,10 @@ class MyApp < Sinatra::Application
   get '/' do
     erb :index
   end
+
+  get '/emails/:id' do
+    file_location = "#{emails_directory}/#{params[:id]}.txt"
+    @email = Email.new( email_string(file_location) )
+    erb :show
+  end
 end
