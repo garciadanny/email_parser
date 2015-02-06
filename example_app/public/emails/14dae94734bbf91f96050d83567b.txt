@@ -1,0 +1,25 @@
+MIME-Version: 1.0
+Received: by 10.112.158.7 with HTTP; Sun, 25 Jan 2015 16:37:14 -0800 (PST)
+Date: Sun, 25 Jan 2015 17:37:14 -0700
+Delivered-To: dannygarcia.me@gmail.com
+Message-ID: <CALYk6k+-4scL4bZZWCSDV_sj93OQCrbM6S3GWskcV3cXuHGyAQ@mail.gmail.com>
+Subject: Test Email Subject
+From: StudioList <support@studiolist.org>
+To: Danny Garcia <dannygarcia.me@gmail.com>
+Content-Type: multipart/alternative; boundary=14dae94734bbf91f96050d83567b
+
+--14dae94734bbf91f96050d83567b
+Content-Type: text/plain; charset=UTF-8
+
+Test email body. This is the body of a very interesting email message sent
+to me from a very interesting person asking me to do some very interesting stuff.
+
+--14dae94734bbf91f96050d83567b
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Test email body. This is the body of a very interesting em=
+ail message sent to me from a very interesting person asking me to do some =
+very interesting stuff.=C2=A0</div>
+
+--14dae94734bbf91f96050d83567b--
