@@ -1,10 +1,10 @@
 MIME-Version: 1.0
 Received: by 10.112.158.7 with HTTP; Sun, 25 Jan 2015 16:37:14 -0800 (PST)
-Date: Sun, 25 Jan 2015 17:37:14 -0700
+Date: Sun, 08 Feb 2015 17:37:14 -0700
 Delivered-To: dannygarcia.me@gmail.com
 Message-ID: <CALYk6k+-4scL4bZZWCSDV_sj93OQCrbM6S3GWskcV3cXuHGyAQ@mail.gmail.com>
 Subject: Test Email Subject
-From: StudioList <support@studiolist.org>
+From: Test User <testuser@example.com>
 To: Danny Garcia <dannygarcia.me@gmail.com>
 Content-Type: multipart/alternative; boundary=14dae94734bbf91f96050d83567b
 

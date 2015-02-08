@@ -1,10 +1,10 @@
 MIME-Version: 1.0
 Received: by 10.112.158.7 with HTTP; Wed, 4 Feb 2015 13:50:42 -0800 (PST)
-Date: Wed, 4 Feb 2015 14:50:42 -0700
+Date: Wed, 09 Feb 2015 14:50:42 -0700
 Delivered-To: dannygarcia.me@gmail.com
 Message-ID: <CALYk6kKzZtpzSDV3aUB5WKRB-4c+PkvGgRHD8-VV5q6gP5O27g@mail.gmail.com>
-Subject: ugh!!!
-From: StudioList <support@studiolist.org>
+Subject: Just saying hi
+From: Lu Smith <lu_smith@example.org>
 To: Danny Garcia <dannygarcia.me@gmail.com>
 Content-Type: multipart/alternative; boundary=001a1140178ecee3e6050e4a2d94
 
