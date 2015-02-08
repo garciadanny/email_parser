@@ -8,4 +8,5 @@ end
 
 group :test do
   gem 'rspec', '~> 3.1.0'
+  gem 'rack-test'
 end
