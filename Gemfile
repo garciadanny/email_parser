@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'sinatra'
+
 group :development, :test do
   gem 'pry', '~> 0.10.1'
 end
