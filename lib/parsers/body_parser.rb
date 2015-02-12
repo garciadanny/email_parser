@@ -74,8 +74,4 @@ class BodyParser
   def body_parts
     @parts ||= {}
   end
-
-  def decode message
-    message.unpack('M').pop
-  end
 end

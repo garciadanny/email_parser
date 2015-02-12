@@ -19,4 +19,8 @@ module MultipartAlternativeParser
   def parsed_body_string
     body_string.rpartition( empty_line_matcher ).first
   end
+
+  def decode message
+    message.unpack('M').pop
+  end
 end
